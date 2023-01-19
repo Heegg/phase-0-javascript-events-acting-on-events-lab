@@ -1,7 +1,12 @@
 // Your code here
+
 const dodger = document.getElementById("dodger");
 
-function moveDodferLeft() {
+dodger.style.backgroundColor = "#FF69B4";
+dodger.style.bottom = "0px";
+// dodger.style.left = "0px";
+
+function moveDodgerLeft() {
     const leftNumbers = dodger.style.left.replace("px", "");
     const left = parseInt(leftNumbers, 10);
     if (left > 0) {
@@ -15,7 +20,7 @@ document.addEventListener("keydown", function(e) {
     }
 });
 
-function moveDodferRight(){
+function moveDodgerRight(){
     const leftNumbers = dodger.style.left.replace("px", "");
     const left = parseInt(leftNumbers, 10);
     if (left < 360) {
